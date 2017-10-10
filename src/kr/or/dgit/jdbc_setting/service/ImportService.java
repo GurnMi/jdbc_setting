@@ -3,16 +3,16 @@ package kr.or.dgit.jdbc_setting.service;
 import kr.or.dgit.jdbc_setting.Config;
 import kr.or.dgit.jdbc_setting.dao.DatabaseDao;
 
-public class ImportServise implements DbService {
+public class ImportService implements DbService {
 	
-	private static final ImportServise Instance = new ImportServise();
+	private static final ImportService Instance = new ImportService();
 	
 
-	public static ImportServise getInstance() {
+	public static ImportService getInstance() {
 		return Instance;
 	}
 	
-	public ImportServise() {
+	public ImportService() {
 	}
 
 

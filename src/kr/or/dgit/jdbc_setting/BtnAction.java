@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 
 import kr.or.dgit.jdbc_setting.service.DbService;
 import kr.or.dgit.jdbc_setting.service.ExportService;
-import kr.or.dgit.jdbc_setting.service.ImportServise;
+import kr.or.dgit.jdbc_setting.service.ImportService;
 import kr.or.dgit.jdbc_setting.service.InitService;
 
 public class BtnAction extends AbstractAction {
@@ -29,7 +29,7 @@ public class BtnAction extends AbstractAction {
 				serivce = ExportService.getInstance();
 				break;
 			case "복원":
-				serivce = ImportServise.getInstance();
+				serivce = ImportService.getInstance();
 				break;
 		}
 		serivce.service();
