@@ -5,6 +5,8 @@ import java.sql.Connection;
 import kr.or.dgit.jdbc_setting.jdbc.DBCon;
 import kr.or.dgit.jdbc_setting.jdbc.JdbcUtil;
 import kr.or.dgit.jdbc_setting.service.DbService;
+import kr.or.dgit.jdbc_setting.service.ExportService;
+import kr.or.dgit.jdbc_setting.service.ImportServise;
 import kr.or.dgit.jdbc_setting.service.InitService;
 
 public class TestMain {
@@ -21,6 +23,12 @@ public class TestMain {
 		DbService serivce = InitService.getInstance();
 		serivce.service();
 
+		serivce = ImportServise.getInstance();
+		serivce.service();
+		
+		serivce = ExportService.getInstance();
+		serivce.service();
+		
 		JdbcUtil.close(connection);			//종료해줘야됨
 	}
 
